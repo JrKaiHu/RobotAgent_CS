@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<devices>
+
+    <network_settings>
+      
+        <CP_IP_ADDRESS>192.168.1.208</CP_IP_ADDRESS>
+        <CP_PORT>11000</CP_PORT>  
+        <ARM_IP_ADDRESS>192.168.1.209</ARM_IP_ADDRESS>
+        <ARM_PORT>11000</ARM_PORT>
+        <ARM_WAIT_TIMEOUT>1000</ARM_WAIT_TIMEOUT>
+        
+    </network_settings>
+
+    <lasers IsEnable = "0">              
+    
+        <laser Vendor = "KEYENCE" Type = "IL065">
+            <DIFFERENCE_LIMIT>2.0</DIFFERENCE_LIMIT>
+            <BAUD_RATE>9600 </BAUD_RATE>
+            <DATA_BITS>8</DATA_BITS>
+            <PARITY>NONE</PARITY>
+            <STOP_BITS>ONE</STOP_BITS>
+            <PORT_NAME>COM4</PORT_NAME>
+        </laser>
+        
+    </lasers>
+    
+    <barcodes IsEnable = "0">              
+      
+        <barcode Vendor = "KEYENCE" Type = "SR-700">
+            <IS_TOP_BARCODE>0</IS_TOP_BARCODE>
+            <READ_TIMEOUT>10000</READ_TIMEOUT>
+            <BAUD_RATE>115200</BAUD_RATE>
+            <DATA_BITS>8</DATA_BITS>
+            <PARITY>EVEN</PARITY>
+            <STOP_BITS>ONE</STOP_BITS>
+            <PORT_NAME>COM3</PORT_NAME>
+        </barcode>            
+        
+    </barcodes>    
+    
+    <cameras IsEnable = "0"> 
+    
+        <camera Vendor = "Basler" Type = "aca2500-14gm">
+            <AUTO_EXPOSURE_MIN>1000</AUTO_EXPOSURE_MIN>
+            <AUTO_EXPOSURE_MAX>60000</AUTO_EXPOSURE_MAX>
+            <IP_ADDRESS>192.168.1.100</IP_ADDRESS>
+        </camera>
+    
+        <camera Vendor = "Smartek" Type = "GC2591CP">
+            <AUTO_EXPOSURE_MIN>200</AUTO_EXPOSURE_MIN>
+            <AUTO_EXPOSURE_MAX>200000</AUTO_EXPOSURE_MAX>
+            <IP_ADDRESS>192.168.1.100</IP_ADDRESS>
+        </camera>               
+        
+    </cameras>      
+    
+</devices>
